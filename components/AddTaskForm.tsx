@@ -20,7 +20,7 @@ const AddTaskForm = () => {
 
 
   return (
-    <form onSubmit={handleSubmit} className="p-4 bg-[green] shadow-md rounded-md">
+    <form onSubmit={handleSubmit} className="p-4 bg-zinc shadow-md rounded-md">
       <input type="text" placeholder="Task Name" value={task.name} onChange={(e) => setTask({ ...task, name: e.target.value })} className="p-2 border rounded w-full mb-2" />
       <input type="text" placeholder="Description" value={task.description} onChange={(e) => setTask({ ...task, description: e.target.value })} className="p-2 border rounded w-full mb-2" />
       <input type="date" value={task.dueDate} onChange={(e) => setTask({ ...task, dueDate: e.target.value })} className="p-2 border rounded w-full mb-2" />
@@ -28,7 +28,6 @@ const AddTaskForm = () => {
     </form>
   );
 };
-
 
 export default AddTaskForm;
 

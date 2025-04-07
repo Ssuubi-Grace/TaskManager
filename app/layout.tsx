@@ -41,10 +41,7 @@ export default function RootLayout({
       >
         <main>
           <NavBar />
-          <TaskProvider> {/* ✅ Wrap children inside TaskProvider */}
-            {children}
-
-          </TaskProvider>
+          {children}
         </main>
       </body>
     </html>
